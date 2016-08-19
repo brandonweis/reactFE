@@ -1,0 +1,68 @@
+html, body, .todo {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body{
+	/*background-image: radial-gradient(white 0%, gray 100%);*/
+	font-family: "Trebuchet MS";
+}
+
+.container {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.articles {
+    margin: 20px;
+    ul {
+        list-style-type: none;
+        // width: 500px;
+        li {
+            padding: 10px;
+            overflow: auto;
+            margin-left: -40px;
+            img {
+                float: left;
+                margin: 0 15px 0 0;
+            }
+
+            h3 {
+                font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+            }
+
+            p {
+                font: 200 12px/1.5 Georgia, Times New Roman, serif;
+            }
+
+            &:hover {
+                background: #eee;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.addArticle {
+    margin: 20px;
+    input, textarea {
+        padding: 5px;
+        width: 471px;
+        font-family: Helvetica, sans-serif;
+        font-size: 1.4em;
+        margin: 0px 0px 10px 0px;
+        border: 2px solid #ccc;
+    }
+
+    textarea {
+        height: 90px;
+    }
+
+    button {
+        width: 100px;
+    }
+}
